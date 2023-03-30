@@ -1,7 +1,19 @@
 import type { NextPage } from 'next'
-import Navbar from '../components/Navbar'
+import alanBtn from "@alan-ai/alan-sdk-web";
+import { useEffect } from 'react';
 
 const Home: NextPage = () => {
+  useEffect(() => {
+    alanBtn({
+      key: 'YOUR_KEY_FROM_ALAN_STUDIO_HERE',
+      onCommand: (commandData) => {
+        if (commandData.command === 'go:back') {
+          // Call the client code that will react to the received command
+        }
+      }
+    });
+  }, []);
+  
   return (
     <div>
       <section
