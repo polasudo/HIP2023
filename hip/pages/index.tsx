@@ -6,6 +6,11 @@ const Home: NextPage = () => {
   useEffect(() => {
     alanBtn({
       key: 'da481460ffc0abbaa2ad4dcf8b3e7b6d2e956eca572e1d8b807a3e2338fdd0dc/stage',
+      onCommand: function (commandData){
+        if (commandData.command === 'testCommand') {
+          alert('This code was executed')
+        }
+      }
     });
   }, []);
   
