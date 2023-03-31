@@ -1,11 +1,11 @@
 import type { NextPage } from 'next'
-import alanBtn from "@alan-ai/alan-sdk-web";
+// import alanBtn from "@alan-ai/alan-sdk-web";
 import { useEffect, useRef } from 'react';
 import ButtonPrimary from '../components/ButtonPrimary';
 
 const Home: NextPage = () => {
-  const alanBtnRef = useRef({}).current;
   useEffect(() => {
+    const alanBtn = require('@alan-ai/alan-sdk-web');
     alanBtn({
       key: 'da481460ffc0abbaa2ad4dcf8b3e7b6d2e956eca572e1d8b807a3e2338fdd0dc/stage',
     });
