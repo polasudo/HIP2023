@@ -5,12 +5,7 @@ import { useEffect } from 'react';
 const Home: NextPage = () => {
   useEffect(() => {
     alanBtn({
-      key: 'YOUR_KEY_FROM_ALAN_STUDIO_HERE',
-      onCommand: (commandData) => {
-        if (commandData.command === 'go:back') {
-          // Call the client code that will react to the received command
-        }
-      }
+      key: 'da481460ffc0abbaa2ad4dcf8b3e7b6d2e956eca572e1d8b807a3e2338fdd0dc/stage',
     });
   }, []);
   
