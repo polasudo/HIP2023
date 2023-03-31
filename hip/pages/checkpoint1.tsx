@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Image from 'next/image';
 import ButtonPrimary from '../components/ButtonPrimary';
 
+type alanBtnRef = {
+    btnInstance?: any
+}
+
 function checkpoint1() {
+    const alanBtnRef: alanBtnRef = useRef({}).current;
+    useEffect(() => {
+        const alanBtn = require('@alan-ai/alan-sdk-web');
+        alanBtnRef.btnInstance = alanBtn({
+            key: process.env.NEXT_PUBLIC_API_KEY,
+        });
+    }, []);
+
     return (
         <>
             <div className="text-white h-screen bg-black justify-center grid justify-items-center">
@@ -25,9 +37,12 @@ function checkpoint1() {
                 </div>
                 <div>
                     <ButtonPrimary path='/about' text="back" color="grey" />
-                    <ButtonPrimary path='/checkpoint2' text="next checkpoint" color="green"/>
+                    <ButtonPrimary path='/checkpoint2' text="next checkpoint" color="green" />
+                    <button className='text-white bg-purple-600 m-5 p-5 rounded-xl' onClick={() => {
+                        alanBtnRef.btnInstance.playText("go upstairs on the first floor");
+                    }}>navigation to class 147 from 1st checkpoint</button>
                 </div>
-                
+
             </div>
 
 

@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Image from 'next/image';
 import ButtonPrimary from '../components/ButtonPrimary';
 
+type alanBtnRef = {
+    btnInstance?: any
+}
+
 function checkpoint2() {
+    const alanBtnRef: alanBtnRef = useRef({}).current;
+    useEffect(() => {
+        const alanBtn = require('@alan-ai/alan-sdk-web');
+        alanBtnRef.btnInstance = alanBtn({
+            key: process.env.NEXT_PUBLIC_API_KEY,
+        });
+    }, []);
+
+
     return (
         <>
             <div className="text-white h-screen bg-black justify-center grid justify-items-center">
@@ -22,9 +35,12 @@ function checkpoint2() {
                 </div>
                 <div>
                     <ButtonPrimary path='/about' text="info" color="grey" />
-                    <ButtonPrimary path='/' text="End of navigation" color="red"/>
+                    <ButtonPrimary path='/' text="End of navigation" color="red" />
+                    <button className='text-white bg-purple-600 m-5 p-5 rounded-xl' onClick={() => {
+                        alanBtnRef.btnInstance.playText("turn left from stars and step to the begining of the hallway and from there go to the sixth door from the begining");
+                    }}>navigation to class 147 from 1st checkpoint</button>
                 </div>
-                
+
             </div>
 
 
