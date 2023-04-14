@@ -38,7 +38,7 @@ function checkpoint2() {
                     <ButtonPrimary path='/about' text="info" color="grey" />
                     <ButtonPrimary path='/' text="End of navigation" color="red" />
                     <button className='text-white bg-purple-600 m-3 p-3 rounded-xl' onClick={() => {
-                        alanBtnRef.btnInstance.playText("turn left from stars and step to the begining of the hallway and from there go to the sixth door from the begining");
+                        alanBtnRef.btnInstance.playText("turn left from stairs and walk through the hallway and count 11th door on the right ");
                     }}>navigation to class 147 from 1st checkpoint</button>
                 </div>
 

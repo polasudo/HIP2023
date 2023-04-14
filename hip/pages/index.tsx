@@ -28,7 +28,7 @@ const Home: NextPage = () => {
           <ButtonPrimary path='/about' text="info" color="grey" /><br />
           <ButtonPrimary path='/checkpoint1' text="checkpoint 1" color="blue" /><br />
           <button className='text-white bg-green-600 m-3 p-3 rounded-xl' onClick={() => {
-            alanBtnRef.btnInstance.playText("you need to start from reception go upstairs on the first floor and from the stairs go to the left, and from there go for 6th door on right");
+            alanBtnRef.btnInstance.playText("you need to start from the reception, go upstairs to the first floor then turn left, and from there go for 11th door on right inside of hallway");
           }}>navigation to class 147</button>
           <br />
           <Image

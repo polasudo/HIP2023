@@ -40,7 +40,7 @@ function checkpoint1() {
                     <ButtonPrimary path='/about' text="back" color="grey" />
                     <ButtonPrimary path='/checkpoint2' text="next checkpoint" color="green" />
                     <button className='text-white bg-purple-600 m-3 p-3 rounded-xl' onClick={() => {
-                        alanBtnRef.btnInstance.playText("go upstairs on the first floor");
+                        alanBtnRef.btnInstance.playText("go upstairs to the first floor");
                     }}>navigation to class 147 from 1st checkpoint</button>
                 </div>
 
