@@ -19,9 +19,9 @@ const about = () => {
         <div>
             <section
                 id="about"
-                className="text-white h-screen bg-black  text-center flex"
+                className="text-white h-screen bg-slate-500  text-center flex"
             >
-                <h1 className="m-auto font-waterfall text-3xl text-purple-600 font-bold  ">
+                <h1 className="m-auto font-waterfall text-3xl text-white font-bold  ">
                     to get more information about this app just click on alanBtn and ask:
                     <br />what is this app about?
                     <br />

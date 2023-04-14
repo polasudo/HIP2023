@@ -17,13 +17,13 @@ function checkpoint1() {
 
     return (
         <>
-            <div className="text-white h-screen bg-black justify-center grid justify-items-center">
+            <div className="text-white h-screen bg-slate-500 justify-center grid justify-items-center">
                 <div className='justify-center grid justify-items-center mt-20'>
                     <div>
-                        <h1 className="m-auto font-waterfall text-3xl text-purple-600 font-bold ">
+                        <h1 className="m-auto font-waterfall text-3xl text-white font-bold ">
                             Checkpoint 1
                         </h1>
-                        <h1 className="m-auto font-waterfall text-xl text-purple-600 font-bold ">
+                        <h1 className="m-auto font-waterfall text-xl text-white font-bold ">
                             to navigate to checkpoint ask for: (navigate me to (#number) checkpoint)
                         </h1>
                     </div>
