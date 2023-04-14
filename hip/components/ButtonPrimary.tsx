@@ -4,7 +4,7 @@ import { UrlObject } from 'url'
 
 const ButtonPrimary = ({path, text, color}: any) => {
     return (
-        <button className='text-white m-4 p-4 rounded-xl' style={{backgroundColor: color}}>
+        <button className='text-white m-3 p-3 rounded-xl' style={{backgroundColor: color}}>
             <Link href={path}>{text}</Link>
         </button>
     )

@@ -17,10 +17,10 @@ function checkpoint1() {
 
     return (
         <>
-            <div className="text-white h-screen bg-slate-500 justify-center grid justify-items-center">
+            <div className="text-white h-screen bg-gray-400 justify-center grid justify-items-center">
                 <div className='justify-center grid justify-items-center mt-20'>
                     <div>
-                        <h1 className="m-auto font-waterfall text-3xl text-white font-bold ">
+                        <h1 className="m-auto font-waterfall text-xl text-white font-bold ">
                             Checkpoint 1
                         </h1>
                         <h1 className="m-auto font-waterfall text-xl text-white font-bold ">
@@ -29,16 +29,17 @@ function checkpoint1() {
                     </div>
                     <div>
                         <Image
-                            src="/logo.svg"
-                            width={100}
-                            height={100}
+                            className='rounded-xl'
+                            src="/checkpoint1.jpg"
+                            width={200}
+                            height={200}
                         />
                     </div>
                 </div>
                 <div>
                     <ButtonPrimary path='/about' text="back" color="grey" />
                     <ButtonPrimary path='/checkpoint2' text="next checkpoint" color="green" />
-                    <button className='text-white bg-purple-600 m-5 p-5 rounded-xl' onClick={() => {
+                    <button className='text-white bg-purple-600 m-3 p-3 rounded-xl' onClick={() => {
                         alanBtnRef.btnInstance.playText("go upstairs on the first floor");
                     }}>navigation to class 147 from 1st checkpoint</button>
                 </div>
